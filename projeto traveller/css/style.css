@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* introducao */
+
+.introducao {
+    height: 900px;
+    background: url("../img/index-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.introducao header nav ul li {
+    display: inline-block;
+    padding: 40px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.introducao header nav ul li a {
+    color: #FFF;
+}
+
+.introducao-logo {
+    height: 650px;
+}
+
+.introducao-logo-img img {
+    width: 500px;
+    height: 500px;
+}
