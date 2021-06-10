@@ -208,3 +208,10 @@ p {
 .modal-lista ul li {
     margin-bottom: 5px;
 }
+
+.figure-modal figcaption {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
