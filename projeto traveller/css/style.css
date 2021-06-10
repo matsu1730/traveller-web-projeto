@@ -108,22 +108,22 @@ p {
     color: #FFF;
 }
 
-/* Quem somos */
+/* menu */
 
-.menu nav ul li {
-    float: right;
+.menu nav ul {
+    padding-top: 15px;
 }
 
-.interna-quem-somos {
+.interna-menu {
     background-color: #111;
     height: 140px;
 }
 
-.interna-quem-somos img {
+.interna-menu img {
     margin-top: 20px;
 }
 
-.interna-quem-somos header nav ul li {
+.interna-menu header nav ul li {
     display: inline-block;
     padding: 40px 20px;
     text-align: center;
@@ -131,9 +131,15 @@ p {
     font-weight: normal;
 }
 
-.interna-quem-somos header nav ul li a {
+.interna-menu header nav ul li a {
     color: #FFF;
 }
+
+.menu-ativo {
+    font-weight: bold;
+}
+
+/* Quem somos */
 
 .quem-somos {
     margin-top: 80px;
