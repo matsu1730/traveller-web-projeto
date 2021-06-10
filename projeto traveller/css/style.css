@@ -162,3 +162,10 @@ p {
     font-size: 20px;
     line-height: 25px;
 }
+
+/* parques */
+
+.img-parques {
+    width: 600px;
+    height: 300px;
+}
