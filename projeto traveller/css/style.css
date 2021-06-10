@@ -165,7 +165,17 @@ p {
 
 /* parques */
 
+.parques-urbanos {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.parques-urbanos p {
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
 .img-parques {
-    width: 600px;
+    max-width: 100%;
     height: 300px;
 }
