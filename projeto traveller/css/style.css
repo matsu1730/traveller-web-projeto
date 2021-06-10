@@ -7,14 +7,14 @@ ul, ol {
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 40px;
     font-weight: bold;
 }
 
 p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 .logo {
@@ -22,10 +22,20 @@ p {
     height: 100px;
 }
 
+.call-to-action {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px;
+}
+
 /* introducao */
 
 .introducao {
-    height: 900px;
+    height: 950px;
     background: url("../img/index-bg.jpg") no-repeat center;
     background-size: cover;
 }
@@ -49,4 +59,32 @@ p {
 .introducao-logo-img img {
     width: 500px;
     height: 500px;
+}
+
+.introducao-dicas {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.introducao-dicas p {
+    padding: 60px 0;
+    font-style: italic;
+}
+
+.introducao-parques {
+    height: 500px;
+    background: url("../img/introducao-parques-bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.introducao-parques h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+.introducao-parques p {
+    color:#FFF;
+    text-align: center;
+    margin-top: 40px;
 }
