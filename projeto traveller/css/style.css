@@ -11,7 +11,7 @@ ul, ol {
     list-style: none;
 }
 
-h1 {
+h1, h2 {
     font-size: 36px;
     line-height: 40px;
     font-weight: bold;
@@ -21,6 +21,7 @@ p {
     font-size: 20px;
     line-height: 25px;
 }
+
 
 .logo {
     width: 100px;
@@ -114,7 +115,7 @@ p {
 }
 
 .interna-quem-somos {
-    background-color: black;
+    background-color: #111;
     height: 140px;
 }
 
@@ -135,11 +136,23 @@ p {
 }
 
 .quem-somos {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .quem-somos-img {
     width: 300px;
     height: 300px;
     margin-left: 100px;
+}
+
+.quem-somos-integrantes {
+    padding: 80px;
+    background-color: #111;
+    margin-top: 60px;
+    color: #FFF;
+}
+
+.quem-somos-integrantes ul li {
+    font-size: 20px;
+    line-height: 25px;
 }
