@@ -127,6 +127,10 @@ p {
     line-height: 25px;
 }
 
+.cartoes {
+    margin: 20px 0;
+}
+
 /* parques */
 
 .parques-urbanos {
@@ -190,5 +194,9 @@ p {
 @media screen and (max-width: 787px) {
     .quem-somos-img {
         margin-left: 75px;
+    }
+
+    .cartoes {
+        margin-left: 50px;
     }
 }
