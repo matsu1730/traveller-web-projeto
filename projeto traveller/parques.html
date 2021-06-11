@@ -9,22 +9,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="interna-menu">
-        <div class="container">
-            <div class="row justify-content-between">
-                <a href="./index.html" class="col-sm-12 col-md-4"><img class="logo" src="./img/logo-traveller-2-branco.png" alt="logo-traveller-2-branco"></a>
-                <header class="col-sm-12 col-md-6 menu">
-                    <nav>
-                        <ul>
-                            <li><a href="./onde-se-hospedar.html">Onde se hospedar</a></li>
-                            <li><a class="menu-ativo" href="./parques.html">Parques</a></li>
-                            <li><a href="./quem-somos.html">Quem somos</a></li>
-                        </ul>
-                    </nav>
-                </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Traveller</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dicas para sua viagem
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./onde-se-hospedar.html">Onde se hospedar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item active" href="./parques.html">Parques<span class="sr-only">(current)</span></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./quem-somos.html">Quem Somos</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
             </div>
-        </div>
-    </div>
+          </nav>
+    </header>
 
     <div class="container parques-urbanos">
 
@@ -329,18 +346,28 @@
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <form class="avaliacao-form col-sm-12 col-md-6" action="" id="form_parques">
-                <p>Já visitou algum dos parques? Deixe sua avaliação!</p>
-
-                <label for="nome">Nome</label>
-                <input type="text" id="form_nome">
-    
-                <label for="email">e-mail</label>
-                <input type="text" id="form_email">
-    
-                <label for="parques">Parque visitado</label>
-                <select name="lista_parques" id="form_visita">
+        <form class="avaliacao-form">
+            <div class="form-group">
+                <label for="txtNome">Nome</label>
+                <input type="nome" class="form-control" id="txtNome" placeholder="Nome Exemplo">
+              </div>
+            <div class="form-group">
+              <label for="txtEmail">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="txtEmail" placeholder="nome@exemplo.com.br">
+            </div>
+            <div class="form-group">
+              <label for="selectNota">Nota</label>
+              <select class="form-control" id="selectNota">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="selectHotel">Parque visitado</label>
+                <select class="form-control" id="selectHotel">
                     <option value="selection">Selecione uma opção</option>
                     <option value="ibirapuera">Parque Ibirapuera</option>
                     <option value="jardim_botanico">Jardim Botânico</option>
@@ -348,32 +375,15 @@
                     <option value="alfredo">Parque Alfredo Volpi</option>
                     <option value="buenos">Parque Buenos Aires</option>
                 </select>
-    
-                <p>Nota</p>
-    
-                <label for="avaliacao">1</label>
-                <input type="radio" id="nota1" name="avaliacao" value="1">
-    
-                <label for="avaliacao">2</label>
-                <input type="radio" id="nota2" name="avaliacao" value="2">
-    
-                <label for="avaliacao">3</label>
-                <input type="radio" id="nota3" name="avaliacao" value="3">
-    
-                <label for="avaliacao">4</label>
-                <input type="radio" id="nota4" name="avaliacao" value="4">
-    
-                <label for="avaliacao">5</label>
-                <input type="radio" id="nota5" name="avaliacao" value="5">
-    
-                <label for="opiniao">Opinião</label>
-                <textarea name="opinioes" id="form_opiniao" cols="30" rows="10"></textarea>
-
-                <button type="submit" class="btn btn-dark">Enviar</button>
-            </form>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Opinião</label>
+              <textarea class="form-control" name="opinioes" id="form_opiniao" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </form>
         </div>
     </div>
-
 
     <div class="footer">
         <div class="container">

@@ -9,32 +9,49 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="interna-menu">
-        <div class="container">
-            <div class="row justify-content-between">
-                <a href="./index.html" class="col-sm-12 col-md-4"><img class="logo" src="./img/logo-traveller-2-branco.png" alt="logo-traveller-2-branco"></a>
-                <header class="col-sm-12 col-md-6 menu">
-                    <nav>
-                        <ul>
-                            <li><a href="">Onde se hospedar</a></li>
-                            <li><a href="./parques.html">Parques</a></li>
-                            <li><a class="menu-ativo" href="./quem-somos.html">Quem somos</a></li>
-                        </ul>
-                    </nav>
-                </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Traveller</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dicas para sua viagem
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./onde-se-hospedar.html">Onde se hospedar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./parques.html">Parques</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./quem-somos.html">Quem Somos<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
             </div>
-        </div>
-    </div>
+          </nav>
+    </header>
 
     <div class="quem-somos container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6 missao">
                 <h1>Missão e história</h1>
                 <p>
                     Visto que é desgastante e desmotivador ter que navegar por diversos sites e blogs até conseguir todas as informações necessárias no seu planejamento de viagem, foi pensado pelo nosso criador, Gulliver, condensar todos esses pequenos pedaços do planejamento em um só lugar, o Traveller. Com isso, você pode se planejar e organizar suas viagens em apenas um lugar, sem mais estresse, apenas focando no que importa.
                 </p>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-4 offset-1">
                 <img class="quem-somos-img" src="./img/logo-traveller-1.png" alt="logo-traveller-1">
             </div>
         </div>
@@ -43,22 +60,59 @@
     <div class="quem-somos-integrantes">
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-4">
-                    <h2>Idealizador</h2>
-                    <p>Gulliver Traveller</p>
+        
+                <div class="col-12 col-md-4">
+                    <div class="card cartoes bg-dark" style="width: 18rem;">
+                        <img src="./img/pessoas/alfonso-matsuoka.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfonso Matsuoka</h5>
+                            <p class="card-text">RM87336</p>
+                        </div>
+                    </div> 
                 </div>
-                <div class="col-4">
-                    <h2>Desenvolvedores</h2>
-                    <ul>
-                        <li>Alfonso Matuoka</li>
-                        <li>Felipe Kim</li>
-                        <li>Lucas Matutani</li>
-                        <li>Matheus Feitosa</li>
-                        <li>Matheus Oliveira</li>
-                    </ul>
+
+                <div class="col-12 col-md-4">
+                    <div class="card cartoes bg-dark" style="width: 18rem;">
+                        <img src="./img/pessoas/felipe-kim.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Felipe Kim</h5>
+                            <p class="card-text">RM87067</p>
+                        </div>
+                    </div> 
                 </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card cartoes bg-dark" style="width: 18rem;">
+                        <img src="./img/pessoas/lucas-matutani.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lucas Matutani</h5>
+                            <p class="card-text">RM87283</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card cartoes bg-dark" style="width: 18rem;">
+                        <img src="./img/pessoas/matheus-feitosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Matheus Feitosa</h5>
+                            <p class="card-text">RM86782</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card cartoes bg-dark" style="width: 18rem;">
+                        <img src="./img/pessoas/matheus-oliveira.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Matheus Oliveira</h5>
+                            <p class="card-text">RM88987</p>
+                        </div>
+                    </div> 
+                </div>
+
             </div>
-        </div>
+        </div> 
     </div>
 
 
